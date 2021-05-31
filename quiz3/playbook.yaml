@@ -1,0 +1,13 @@
+---
+
+- name: Installation VM 
+  hosts: target
+
+  tasks:
+  - name: ftpserver installation
+    include_role:
+      name: ftpserver
+
+  - name: ftpclient installation
+    include_role:
+      name: ftpclient
